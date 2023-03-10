@@ -6,7 +6,6 @@
   // In the example below there is folder name "Clients" on Google Drive, 
   // within that folder are subfolders for each client, each folder is named using the busienss name
   
-
   // EXAMPLE: Function to build array containing values for autocomplete dropdown that gets passed to JS script
   // Only works when creating new posts or editing posts with "Clients" custom post type 
   // Array is built from Google Drive API request to grab all subfolders in a parent folder
