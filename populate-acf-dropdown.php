@@ -4,7 +4,7 @@
 //NOTE: custom_field is used as a stand in for the acf field name in this example
 
 /* ADD BELOW TO FUNCTIONS FILE*/
-// Add options to ACF drop-down
+// Dynamically add choices to ACF drop-down
 function acf_load_custom_field_choices($field){
 	// reset choices
 	$field['choices'] = array();
