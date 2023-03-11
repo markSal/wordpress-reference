@@ -38,5 +38,5 @@ $logo_href = current(get_post_meta($custom_field_id, 'sp_logo_carousel_link_opti
 $logo_href = $logo_url['lcp_logo_link'];  						// Get url value from url array
 
 // Display logo with link to organization from logo carousel
-echo '<a href="' . $logo_href . '" target="_blank"><img src="'. $logo_src .'"  title="' . $logo_name . '"></img></a>";
+echo '<a href="' . $logo_href . '" target="_blank"><img src="'. $logo_src .'"  title="' . $logo_name . '"></img></a>';
 ?>
