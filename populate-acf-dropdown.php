@@ -4,7 +4,7 @@
 //NOTE: custom_field is used as a stand in for the acf field name in this example
 
 /* ADD BELOW TO FUNCTIONS FILE*/
-//Add options to ACF drop-down
+// Add options to ACF drop-down
 function acf_load_custom_field_choices($field){
 	// reset choices
 	$field['choices'] = array();
@@ -31,11 +31,11 @@ add_filter('acf/load_field/name=custom_field', 'acf_load_custom_field_choices');
 
 /* ADD BELOW TO NEWS POST DISPLAY */
 // Display logo in News Post
-$custom_field_id = get_field('custom_field'); // Get data from ACF field
-$logo_name = get_the_title($custom_field_id); // Get organization name from logo carousel
-$logo_src = get_the_post_thumbnail_url($custom_field_id);  // Get logo url form logo carousel
-$logo_href = current(get_post_meta($custom_field_id, 'sp_logo_carousel_link_option')); // Get url array attached to logo in logo carousel
-$logo_href = $logo_url['lcp_logo_link'];  // Get actualy url from url array
+$custom_field_id = get_field('custom_field'); 						// Get data from ACF field
+$logo_name = get_the_title($custom_field_id); 						// Get organization name from logo carousel
+$logo_src = get_the_post_thumbnail_url($custom_field_id);  				// Get logo url form logo carousel
+$logo_href = current(get_post_meta($custom_field_id, 'sp_logo_carousel_link_option')); 	// Get url array attached to logo in logo carousel
+$logo_href = $logo_url['lcp_logo_link'];  						// Get url value from url array
 
 // Display logo with link to organization from logo carousel
 echo '<a href="' . $logo_href . '" target="_blank"><img src="'. $logo_src .'"  title="' . $logo_name . '"></img></a>";
