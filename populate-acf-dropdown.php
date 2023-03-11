@@ -1,6 +1,5 @@
 <?php
 
-
 //NOTE: custom_field is used as a stand in for the acf field name in this example
 
 /* ADD BELOW TO FUNCTIONS FILE*/
