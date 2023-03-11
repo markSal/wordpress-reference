@@ -34,7 +34,7 @@ $custom_field_id = get_field('custom_field'); 						// Get data from ACF field
 $logo_name = get_the_title($custom_field_id); 						// Get organization name from logo carousel
 $logo_src = get_the_post_thumbnail_url($custom_field_id);  				// Get logo url form logo carousel
 $logo_href = current(get_post_meta($custom_field_id, 'sp_logo_carousel_link_option')); 	// Get url array attached to logo in logo carousel
-$logo_href = $logo_url['lcp_logo_link'];  						// Get url value from url array
+$logo_href = $logo_href['lcp_logo_link'];  						// Get url value from url array
 
 // Display logo with link to organization from logo carousel
 echo '<a href="' . $logo_href . '" target="_blank"><img src="'. $logo_src .'"  title="' . $logo_name . '"></img></a>';
